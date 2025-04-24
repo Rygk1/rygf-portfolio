@@ -1,0 +1,27 @@
+<p-menubar
+  [model]="navItems"
+  styleClass="custom-menubar"
+  class="custom-menubar"
+>
+  <ng-template pTemplate="start">
+    <img src="assets/logos/logo3.svg" alt="logo" class="logo" />
+  </ng-template>
+
+  <ng-template pTemplate="end">
+    <div class="nav-icons">
+      <a href="https://github.com/Rygk1" target="_blank" class="nav-icon">
+        <i class="pi pi-github"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/rafael-gaitan"
+        target="_blank"
+        class="nav-icon"
+      >
+        <i class="pi pi-linkedin"></i>
+      </a>
+      <!-- <button class="nav-icon" (click)="toggleLanguage()">
+        <i class="pi pi-language"></i>
+      </button> -->
+    </div>
+  </ng-template>
+</p-menubar>

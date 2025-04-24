@@ -1,0 +1,257 @@
+/* Galleria styles */
+:host
+  ::ng-deep
+  .custom-galleria.p-galleria.p-galleria-fullscreen.pgalleria-mask {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  z-index: 9999 !important;
+
+  .p-galleria-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+
+    img {
+      max-height: 90vh;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .p-galleria-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #f87171;
+    }
+  }
+
+  .p-galleria-item-prev,
+  .p-galleria-item-next {
+    color: #ffffff;
+    background: transparent;
+    font-size: 2rem;
+
+    &:hover {
+      color: #60a5fa;
+    }
+  }
+
+  .p-galleria-item-prev {
+    left: 1rem;
+  }
+
+  .p-galleria-item-next {
+    right: 1rem;
+  }
+
+  .p-galleria-indicators {
+    display: none;
+  }
+
+  .p-galleria-footer {
+    display: none;
+  }
+
+  .p-galleria-thumbnail-wrapper {
+    display: none;
+  }
+}
+
+:host {
+  display: block;
+  background-color: #111827; /* Fondo oscuro principal (ajusta si es necesario) */
+  padding: 50px 20px; /* Espaciado alrededor de la sección */
+  color: #f3f4f6; /* Color de texto principal claro */
+}
+
+.projects-container {
+  max-width: 1100px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenedor */
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño del título principal */
+    margin-bottom: 40px;
+    color: #ffffff; /* Color blanco para el título */
+    font-weight: 600;
+  }
+  .project-card-horizontal {
+    display: flex;
+    // flex-direction: row;
+    gap: 20px;
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    align-items: center; /* Centra verticalmente el contenido */
+    .project-image {
+      max-width: 250px;
+      max-height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+    }
+  }
+  .p-grid {
+    margin-left: -1rem; /* Compensa el padding de las columnas */
+    margin-right: -1rem; /* Compensa el padding de las columnas */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    gap: 1rem; /* espacio entre divs */
+    padding: 1rem;
+  }
+
+  .p-col-12,
+  .p-col-md-6 {
+    padding: 1rem; /* Espacio entre las tarjetas */
+  }
+
+  .project-card {
+    background-color: #1f2937; /* Fondo oscuro para las tarjetas */
+    padding: 10px 25px;
+    border-radius: 8px; /* Bordes redondeados */
+    height: 100%; /* Asegura que tarjetas en la misma fila tengan igual altura */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+
+    .project-title {
+      font-size: 1.4rem; /* Tamaño del título de la tarjeta */
+      color: #ffffff; /* Color blanco para el título */
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .project-link {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+
+        i {
+          margin-left: 8px;
+          font-size: 1.2rem;
+        }
+
+        &.with-hover:hover {
+          color: #6366f1;
+        }
+
+        .external-icon {
+          font-size: 1rem;
+        }
+      }
+      .project-type-icon {
+        font-size: 1.5rem;
+        color: #9ca3af;
+      }
+    }
+
+    .project-description {
+      font-size: 0.95rem; /* Tamaño del texto de descripción */
+      color: #d1d5db; /* Color gris claro para la descripción */
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1; /* Hace que la descripción ocupe el espacio disponible */
+    }
+
+    .project-technologies {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los chips pasen a la siguiente línea */
+      gap: 8px; /* Espacio entre los chips */
+      margin-top: auto; /* Empuja los chips hacia abajo si hay espacio */
+      /* Estilos específicos para los p-chip usando la clase asignada */
+      ::ng-deep .p-chip.tech-chip {
+        background-color: #374151 !important; /* Fondo del chip (usa !important si es necesario sobreescribir estilos de PrimeNG) */
+        color: #e5e7eb !important; /* Color del texto del chip */
+        img {
+          width: 20px; /* Ancho del icono dentro del chip */
+          height: 20px; /* Alto del icono dentro del chip */
+          margin-right: 5px; /* Espacio entre el icono y el texto */
+          aspect-ratio: 1 / 1; /* Mantiene la proporción del chip */
+          object-fit: contain;
+        }
+        font-size: 0.8rem; /* Tamaño de fuente del chip */
+        padding: 0px 18px; /* Relleno interno del chip */
+        border-radius: 18px; /* Bordes redondeados para el chip */
+        /* Quitar el icono de quitar si no se necesita (si p-chip lo incluye por defecto) */
+        .p-chip-remove-icon {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* Ajustes responsivos opcionales */
+@media screen and (max-width: 768px) {
+  .project-card-horizontal {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: none;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+
+    .project-card {
+      width: 100%;
+      padding: 0;
+
+      .project-title {
+        font-size: 1.2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .project-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .project-type-icon {
+          font-size: 1.2rem;
+        }
+      }
+
+      .project-description {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+      }
+
+      .project-technologies {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .projects-container {
+    padding: 0 1rem;
+
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+}

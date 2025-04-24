@@ -1,0 +1,35 @@
+<section id="technologies">
+  <div class="tech-section">
+    <h2 class="section-title">Stack</h2>
+    <div class="tech-grid">
+      <ng-container *ngFor="let tech of technologies">
+        <div class="tech-card">
+          <img
+            [src]="'./../assets/icons/' + tech.icon + '.svg'"
+            [alt]="tech.name"
+          />
+          <span>{{ tech.name }}</span>
+        </div>
+      </ng-container>
+    </div>
+
+    <h2 class="section-title">Tools</h2>
+    <div class="tech-grid">
+      <ng-container *ngFor="let tool of tools">
+        <div class="tech-card">
+          <img [src]="'assets/icons/' + tool.icon + '.svg'" [alt]="tool.name" />
+          <span>{{ tool.name }}</span>
+        </div>
+      </ng-container>
+    </div>
+    <h2 class="section-title">Learning</h2>
+    <div class="tech-grid">
+      <ng-container *ngFor="let tool of learning">
+        <div class="tech-card">
+          <img [src]="'assets/icons/' + tool.icon + '.svg'" [alt]="tool.name" />
+          <span>{{ tool.name }}</span>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>

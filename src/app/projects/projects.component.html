@@ -1,1 +1,75 @@
-<p>projects works!</p>
+<section id="projects" class="projects-container">
+  <h2 class="section-title">Projects</h2>
+  <div class="p-grid">
+    <div *ngFor="let project of projects" class="p-col-12 p-md-6">
+      <div class="project-card-horizontal">
+        <img
+          (click)="showGallery(project)"
+          class="project-image"
+          [src]="
+            'assets/images/' +
+            project.title.toLowerCase() +
+            '/' +
+            project.mainImage
+          "
+        />
+        <div class="project-card">
+          <h3 class="project-title">
+            <a
+              *ngIf="project.link; else plainTitle"
+              [href]="project.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link with-hover"
+            >
+              {{ project.title }}
+              <i class="pi pi-external-link external-icon"></i>
+            </a>
+            <ng-template #plainTitle>
+              <span class="project-link">
+                {{ project.title }}
+              </span>
+            </ng-template>
+            <i
+              class="project-type-icon"
+              [class]="
+                project.type === 'web' ? 'pi pi-desktop' : 'pi pi-mobile'
+              "
+              [title]="project.type"
+            ></i>
+          </h3>
+
+          <p class="project-description">{{ project.description }}</p>
+
+          <div class="project-technologies">
+            <p-chip
+              *ngFor="let tech of project.technologies"
+              [image]="'assets/icons/' + tech.toLowerCase() + '.svg'"
+              [label]="tech"
+              styleClass="tech-chip"
+            ></p-chip>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<p-galleria
+  class="custom-galleria"
+  [value]="displayedProjectImages"
+  [(visible)]="displayGallery"
+  [responsiveOptions]="responsiveOptions"
+  [containerStyle]="{ 'max-width': '850px' }"
+  [numVisible]="7"
+  [circular]="true"
+  [fullScreen]="true"
+  [showItemNavigators]="true"
+  [showThumbnails]="false"
+>
+  <ng-template pTemplate="item" let-item>
+    <img
+      [src]="'assets/images/' + projectTitle.toLowerCase() + '/' + item"
+      style="width: 100%; display: block"
+    />
+  </ng-template>
+</p-galleria>

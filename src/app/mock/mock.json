@@ -1,0 +1,153 @@
+{
+  "navbar": [
+    { "id": "home", "opt": "Inicio" },
+    { "id": "projects", "opt": "Proyectos" },
+    { "id": "technologies", "opt": "Tecnologías" },
+    { "id": "contact", "opt": "Contacto" }
+  ],
+  "about": {
+    "name": "Hi, I'm Rafael Gaitan",
+    "contact": {
+      "phone": "+57 320 608 3876",
+      "email": "rafael.gaitan342@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/rafael-gaitan"
+    },
+    "profession": "Front end developer with +4 years of experience in web and mobile applications",
+    "summary": "bringing adaptability, active listening, and a commitment to high-quality, tailored code. Motivated by continuous improvement and team collaboration, delivering solutions that align with the company's goals and drive impactful results.",
+    "summaryTwo": "I follow development principles like SOLID, DRY, and KISS, which allow me to create scalable, maintainable, and high-quality solutions.",
+    "summaryThree": "I enjoy collaborating with teams and bringing innovative ideas to overcome challenges.",
+    "summaryFour": "My focus is on details, always aiming to deliver the best solutions tailored to the specific needs of each project.",
+    "summaryFive": "If you're looking for someone committed, detail-oriented, and ready to tackle new challenges I'd love to work with you."
+  },
+  "projects": [
+    {
+      "title": "AgroWorker",
+      "description": "Es una aplicación móvil corporativa diseñada con el principio de offline-first para apoyar a los productores en campo, permitiendo la recolección y gestión de datos en zonas sin acceso a internet. Diseñé e implementé un CMS vinculado a la app para facilitar la gestión de datos en operaciones de campo. Documenté funcionalidades, código, flujos de desarrollo, diagramas y pruebas. Organicé y estructuré toda la documentación para mantener un registro claro y ordenado del proceso de desarrollo.",
+      "technologies": [
+        "SCSS",
+        "HTML5",
+        "Ionic",
+        "Firestore",
+        "Angular",
+        "TypeScript",
+        "Jira",
+        "Atlassian",
+        "Capacitor",
+        "NgRx",
+        "RxJS",
+        "Git",
+        "Jest",
+        "Scrum"
+      ],
+      "type": "mobile",
+      "mainImage": "ac-login.webp",
+      "images": [
+        "ac-login.webp",
+        "ac-home.webp",
+        "ac-profile.webp",
+        "ac-sync.webp"
+      ],
+      "link": ""
+    },
+    {
+      "title": "RiskMann",
+      "description": "Aplicación que permite utilizar plantillas para la inspección de herramientas, equipos e instalaciones. El usuario puede crear sus propias plantillas, programar inspecciones y generar planes de acción. También incluye funcionalidades para el seguimiento y estadísticas de las inspecciones realizadas.",
+      "technologies": [
+        "Vue",
+        "Firebase",
+        "JavaScript",
+        "GitHub",
+        "Bootstrap",
+        "CSS3",
+        "HTML5"
+      ],
+      "type": "web",
+      "mainImage": "home.webp",
+      "images": ["home.webp", "login.webp"],
+      "link": "https://riskmanndev.web.app/inicio"
+    },
+    {
+      "title": "IPER",
+      "description": "Sistema para el seguimiento en tiempo real de matrices de riesgos por actividad. Permite la identificación, evaluación y control de riesgos, además de la creación de planes de acción específicos para cada contexto de trabajo.",
+      "technologies": [
+        "Vue",
+        "Firebase",
+        "JavaScript",
+        "GitHub",
+        "Bootstrap",
+        "CSS3",
+        "HTML5"
+      ],
+      "type": "web",
+      "mainImage": "home.webp",
+      "images": ["home.webp", "login.webp"],
+      "link": "https://iper-matriz.web.app/login"
+    },
+    {
+      "title": "SCOW",
+      "description": "Sistema de gestión y registro de clientes y usuarios enfocado en empresas de seguridad o entidades que operan con armas de fuego o armas de letalidad reducida. Administra armerillos, inventarios de armas y munición.",
+      "technologies": [
+        "Vue",
+        "Firebase",
+        "JavaScript",
+        "GitHub",
+        "Bootstrap",
+        "CSS3",
+        "HTML5"
+      ],
+      "type": "web",
+      "mainImage": "home.webp",
+      "images": ["home.webp", "login.webp"],
+      "link": "https://scow-sofu-2018.web.app/#/"
+    }
+  ],
+  "education": {
+    "institution": "Universidad Internacional del Trópico Americano (UNITROPICO)",
+    "degree": "Bachelor's Degree in Systems Engineering",
+    "graduationYear": 2022
+  },
+  "technologies": [
+    { "name": "Angular", "icon": "angular" },
+    { "name": "Ionic", "icon": "ionic" },
+    { "name": "Vue", "icon": "vue" },
+    { "name": "SCSS", "icon": "scss" },
+    { "name": "CSS3", "icon": "css3" },
+    { "name": "HTML5", "icon": "html5" },
+    { "name": "Firestore", "icon": "firebase" },
+    { "name": "NgRx", "icon": "ngrx" },
+    { "name": "RxJS", "icon": "rxjs" },
+    { "name": "Jest", "icon": "jest" },
+    { "name": "Cordova", "icon": "cordova" },
+    { "name": "JavaScript", "icon": "javascript" },
+    { "name": "TypeScript", "icon": "typescript" },
+    { "name": "Bootstrap", "icon": "bootstrap" },
+    { "name": "PrimeNg", "icon": "primeng" },
+    { "name": "jQuery", "icon": "jquery" },
+    { "name": "PostgreSQL", "icon": "postgresql" }
+  ],
+  "tools": [
+    { "name": "Jira", "icon": "jira" },
+    { "name": "Atlassian", "icon": "atlassian" },
+    { "name": "Git", "icon": "git" },
+    { "name": "GitHub", "icon": "github" },
+    { "name": "Visual Studio Code", "icon": "vscode" },
+    { "name": "Slack", "icon": "slack" },
+    { "name": "Postman", "icon": "postman" }
+  ],
+  "skills": {
+    "languages": ["Spanish (Native)", "English (B2)"],
+    "frameworks": ["Angular", "Ionic", "Vue"],
+    "programmingLanguages": ["TypeScript", "JavaScript", "NgRx", "RxJs"],
+    "databases": ["Firestore", "PostgreSQL", "MySQL"],
+    "markupAndStyling": ["HTML", "SCSS"],
+    "tools": ["Visual Studio"],
+    "versionControl": ["Git", "GitHub"],
+    "methodologies": ["Scrum"],
+    "unitTesting": ["Jest"]
+  },
+  "learning": [
+    { "name": "React", "icon": "react" },
+    { "name": "Tailwind", "icon": "tailwind" },
+    { "name": "AWS", "icon": "aws" }
+  ]
+}
