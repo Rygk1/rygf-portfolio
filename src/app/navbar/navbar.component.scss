@@ -1,0 +1,104 @@
+::ng-deep .custom-menubar {
+  background-color: #1f2937;
+  border: none;
+  border-bottom: 1px solid #2c2f36;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  border-radius: 0;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  @media screen and (max-width: 960px) {
+    .p-menubar .p-menubar-root-list {
+      background: #1f2937 !important;
+    }
+  }
+
+  .p-menubar-root-list {
+    gap: 0.5rem;
+
+    .p-menuitem .p-menuitem-content {
+      transition: box-shadow 0.2s;
+      border-radius: 11px;
+      .p-menuitem-link {
+        .p-menuitem-text {
+          color: #ffffff;
+        }
+        .p-menuitem-icon {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .p-menuitem-link {
+    display: flex; // ← centra el contenido
+    align-items: center; // ← centra verticalmente
+    justify-content: center; // ← centra horizontalmente
+    gap: 0.5rem; // ← espacio entre ícono y texto (si aplica)
+    height: 100%; // ← para que el botón ocupe el alto del navbar
+
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #374151; // ← tono más claro al pasar mouse
+      color: #6366f1; // ← color lila claro (coherente con los íconos)
+    }
+
+    &.p-menuitem-active {
+      font-weight: 600;
+      border-bottom: 2px solid #6366f1;
+      background-color: #1e293b; // ← opcional si quieres un fondo más marcado
+      color: #6366f1;
+    }
+
+    i {
+      font-size: 1.1rem; // ← mejora visibilidad del ícono
+    }
+  }
+  .p-menuitem-link:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .logo {
+    height: 40px;
+    margin-right: 0rem;
+    width: 180px;
+  }
+
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-right: 6px;
+
+    .nav-icon {
+      font-size: 1.3rem;
+      color: #ffffff;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      i {
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        color: #6366f1;
+      }
+    }
+  }
+}
+
+:host {
+  display: block;
+  margin-top: 60px; // altura del navbar
+}

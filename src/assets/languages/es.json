@@ -1,0 +1,22 @@
+{
+  "navbar": [
+    { "id": "home", "opt": "Inicio" },
+    { "id": "projects", "opt": "Proyectos" },
+    { "id": "technologies", "opt": "Tecnologías" },
+    { "id": "contact", "opt": "Contacto" }
+  ],
+  "about": {
+    "name": "Hola, soy Rafael Gaitán",
+    "contact": {
+      "phone": "+57 320 608 3876",
+      "email": "rafael.gaitan342@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/rafael-gaitan"
+    },
+    "profession": "Desarrollador front-end con más de 4 años de experiencia en aplicaciones web y móviles",
+    "summary": "Aporto adaptabilidad, escucha activa y compromiso con un código de alta calidad y personalizado. Motivado por la mejora continua y la colaboración en equipo, entrego soluciones alineadas con los objetivos de la empresa y que generan resultados impactantes.",
+    "summaryTwo": "Sigo principios de desarrollo como SOLID, DRY y KISS, que me permiten crear soluciones escalables, mantenibles y de alta calidad.",
+    "summaryThree": "Disfruto colaborar con equipos y aportar ideas innovadoras para superar desafíos.",
+    "summaryFour": "Mi enfoque está en los detalles, siempre apuntando a ofrecer las mejores soluciones adaptadas a las necesidades específicas de cada proyecto.",
+    "summaryFive": "Si buscas a alguien comprometido, detallista y listo para asumir nuevos retos, me encantaría trabajar contigo."
+  }
+}

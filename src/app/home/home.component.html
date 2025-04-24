@@ -1,1 +1,16 @@
-<p>home works!</p>
+<!-- Aquí se renderizarán los componentes hijos -->
+<app-about #about *ngIf="aboutData()" [about]="aboutData()"></app-about>
+<app-projects
+  #projects
+  *ngIf="projectsData()"
+  [projects]="projectsData()"
+></app-projects>
+<app-technologies
+  #technologies
+  *ngIf="techData()"
+  [technologies]="techData()"
+  [tools]="toolsData()"
+  [learning]="learningData()"
+></app-technologies>
+<!-- <app-contact #contact></app-contact> -->
+<!-- <router-outlet> </router-outlet> -->

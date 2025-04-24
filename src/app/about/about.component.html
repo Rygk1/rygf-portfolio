@@ -1,1 +1,23 @@
-<p>about works!</p>
+<section id="home" *ngIf="about" class="about-body">
+  <div class="about-section">
+    <h1 class="title">{{ about.name }}</h1>
+    <h2 class="subtitle">
+      {{ about.profession }}
+    </h2>
+    <p class="about-text">
+      {{ about.summary }}
+      {{ about.summaryTwo }}
+    </p>
+    <p class="about-text">
+      {{ about.summaryThree }}
+      {{ about.summaryFour }}
+      {{ about.summaryFive }}
+    </p>
+    <!-- <p class="about-text">
+    </p>
+    <p class="about-text">
+    </p>
+    <p class="about-text">
+    </p> -->
+  </div>
+</section>

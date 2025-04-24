@@ -1,0 +1,28 @@
+<svg width="260" height="40" viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-family: 'Courier New', monospace;
+      font-size: 20px;
+      fill: #ffffff;
+    }
+    .name {
+      fill: #6366f1;
+    }
+    .cursor {
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      50.01%, 100% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Texto del logo -->
+  <text x="0" y="26" class="text">
+    &lt;<tspan class="name">Rafael Gaitan</tspan>/&gt;
+  </text>
+
+  <!-- Cursor parpadeante -->
+  <rect x="200" y="6" width="2" height="24" fill="#ffffff" class="cursor" />
+</svg>
