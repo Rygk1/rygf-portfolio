@@ -25,6 +25,7 @@ import { MenubarModule } from 'primeng/menubar';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
+  public prueba = "Hola mundo"
   navData = signal<PortfolioData>(info);
   activeItem = signal<any>(null);
   mobileMenuOpen = false;
