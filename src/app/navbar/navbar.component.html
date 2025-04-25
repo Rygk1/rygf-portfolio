@@ -1,3 +1,5 @@
+@if (navItems.length > 0) {
+
 <p-menubar
   [model]="navItems"
   styleClass="custom-menubar"
@@ -6,7 +8,14 @@
   <ng-template pTemplate="start">
     <img src="assets/logos/logo3.svg" alt="logo" class="logo" />
   </ng-template>
-
+  <ng-template pTemplate="item" let-item>
+    <a (click)="item.command()" class="p-menuitem-link">
+      <span [class]="item.icon" class="p-menuitem-icon"></span>
+      <span class="p-menuitem-text">{{
+        "navbar." + item.label | translate
+      }}</span>
+    </a>
+  </ng-template>
   <ng-template pTemplate="end">
     <div class="nav-icons">
       <a href="https://github.com/Rygk1" target="_blank" class="nav-icon">
@@ -19,9 +28,18 @@
       >
         <i class="pi pi-linkedin"></i>
       </a>
-      <!-- <button class="nav-icon" (click)="toggleLanguage()">
+      <p-menu
+        #langMenu
+        [popup]="true"
+        [model]="languageOptions"
+        styleClass="custom-language-menu"
+      ></p-menu>
+
+      <button class="nav-icon" (click)="langMenu.toggle($event)">
         <i class="pi pi-language"></i>
-      </button> -->
+      </button>
     </div>
   </ng-template>
 </p-menubar>
+
+}

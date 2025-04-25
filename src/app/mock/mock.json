@@ -21,7 +21,7 @@
   },
   "projects": [
     {
-      "title": "AgroWorker",
+      "title": "AgroCollect",
       "description": "Es una aplicación móvil corporativa diseñada con el principio de offline-first para apoyar a los productores en campo, permitiendo la recolección y gestión de datos en zonas sin acceso a internet. Diseñé e implementé un CMS vinculado a la app para facilitar la gestión de datos en operaciones de campo. Documenté funcionalidades, código, flujos de desarrollo, diagramas y pruebas. Organicé y estructuré toda la documentación para mantener un registro claro y ordenado del proceso de desarrollo.",
       "technologies": [
         "SCSS",
@@ -45,7 +45,8 @@
         "ac-login.webp",
         "ac-home.webp",
         "ac-profile.webp",
-        "ac-sync.webp"
+        "ac-sync.webp",
+        "cms.webp"
       ],
       "link": ""
     },
@@ -117,7 +118,7 @@
     { "name": "NgRx", "icon": "ngrx" },
     { "name": "RxJS", "icon": "rxjs" },
     { "name": "Jest", "icon": "jest" },
-    { "name": "Cordova", "icon": "cordova" },
+    { "name": "Capacitor", "icon": "capacitor" },
     { "name": "JavaScript", "icon": "javascript" },
     { "name": "TypeScript", "icon": "typescript" },
     { "name": "Bootstrap", "icon": "bootstrap" },
