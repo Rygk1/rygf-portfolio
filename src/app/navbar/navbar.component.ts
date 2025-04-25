@@ -35,19 +35,23 @@ export class NavbarComponent {
           .querySelector('#technologies')
           ?.scrollIntoView({ behavior: 'smooth' }),
     },
-    // {
-    //   label: 'Contacto',
-    //   icon: 'pi pi-envelope',
-    //   command: () =>
-    //     document
-    //       .querySelector('#contact')
-    //       ?.scrollIntoView({ behavior: 'smooth' }),
-    // },
+    {
+      label: 'CV',
+      icon: 'pi pi-download',
+      command: () => this.donwloadCV(),
+    },
   ];
 
   toggleLanguage() {
     // Implement language toggle logic here
     console.log('Todavia no funciona el toggle de idioma :(');
     // this.translationService.toggleLanguage();
+  }
+
+  donwloadCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/cv/cv.pdf'; // Path to your CV file
+    link.download = 'CV.pdf'; // Name of the downloaded file
+    link.click();
   }
 }
