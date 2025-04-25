@@ -9,11 +9,11 @@
   "about": {
     "name": "Hi, I'm Rafael Gaitan",
     "profession": "Front-end developer with 4+ years of experience in web and mobile applications",
-    "summary": "Bringing adaptability, active listening, and a commitment to high-quality, tailored code. Motivated by continuous improvement and team collaboration, delivering solutions that align with the company's goals and drive impactful results.",
-    "summaryTwo": "I follow development principles like SOLID, DRY, and KISS, which allow me to create scalable, maintainable, and high-quality solutions.",
-    "summaryThree": "I enjoy collaborating with teams and bringing innovative ideas to overcome challenges.",
-    "summaryFour": "My focus is on details, always aiming to deliver the best solutions tailored to the specific needs of each project.",
-    "summaryFive": "If you're looking for someone committed, detail-oriented, and ready to tackle new challenges, I'd love to work with you."
+    "summary": "I'm driven by challenges and love crafting elegant solutions to complex problems",
+    "summaryTwo": "I believe in the power of good clean code, clear, and purposeful.",
+    "summaryThree": "I collaborate, listen, propose and adapt, because every project deserves something unique.",
+    "summaryFour": "A personal manifesto? Maybe.",
+    "summaryFive": "A true commitment to every line of code? Always."
   },
   "labels": {
     "description": "Description",
@@ -25,19 +25,19 @@
   "projects": {
     "agrocollect": {
       "title": "AgroCollect",
-      "description": "Corporate mobile app built with an offline-first approach to support field workers in rural areas. Allows data collection and management without internet. I implemented a CMS for streamlined data management, documented features and flows, and organized technical documentation for the entire development process."
+      "description": "Mobile app (offline-first) used by an NGO to support agricultural producers across Colombia. \n I worked in the implementation of a custom CMS for content management, documented user flows, features, and structured the full technical documentation.\nThis solution enabled data collection without internet access, improving field operations and decision-making for multiple agricultural initiatives."
     },
     "riskmann": {
       "title": "RiskMann",
-      "description": "App for inspecting tools, equipment, and facilities using customizable templates. Users can schedule inspections, create action plans, and track and analyze results."
+      "description": "Inspection platform for tools, equipment, and facilities using customizable templates.\n I contributed to building dynamic interfaces to schedule inspections, manage action plans, and visualize data.\nThe platform improved the inspection workflow and helped reduce reporting time by centralizing key safety metrics."
     },
     "iper": {
       "title": "IPER",
-      "description": "Real-time risk matrix tracking system by activity. Supports risk identification, assessment, and control, and allows the creation of context-specific action plans."
+      "description": "Real-time risk matrix management system focused on workplace safety.\n I worked on features to identify, assess, and control risks, enabling tailored action plans per activity.\nThe system empowered companies to track risk exposure live and comply with local safety regulations more efficiently."
     },
     "scow": {
       "title": "SCOW",
-      "description": "Management system for security companies or entities that handle firearms. Manages clients, users, armories, and inventory of weapons and ammunition."
+      "description": "Security company management platform for handling clients, users, weapons, and ammunition inventory.\n I developed modules for inventory tracking, client management, and internal controls.\nThe platform streamlined logistics and compliance for companies handling regulated equipment."
     }
   }
 }
