@@ -4,10 +4,7 @@
     <div class="tech-grid">
       <ng-container *ngFor="let tech of technologies">
         <div class="tech-card">
-          <img
-            [src]="'./../assets/icons/' + tech.icon + '.svg'"
-            [alt]="tech.name"
-          />
+          <img [src]="'assets/icons/' + tech.icon + '.svg'" [alt]="tech.name" />
           <span>{{ tech.name }}</span>
         </div>
       </ng-container>
