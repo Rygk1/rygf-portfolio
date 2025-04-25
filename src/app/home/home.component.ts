@@ -41,6 +41,6 @@ export class HomeComponent {
   }
 
   toggleLanguage() {
-    console.log('Language toggled!');
+    console.log('Language toggled! nuevos y viejos');
   }
 }
