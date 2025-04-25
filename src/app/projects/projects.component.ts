@@ -5,11 +5,19 @@ import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
 import { ButtonModule } from 'primeng/button';
 import { GalleriaModule } from 'primeng/galleria';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, CardModule, ChipModule, ButtonModule, GalleriaModule],
+  imports: [
+    CommonModule,
+    CardModule,
+    ChipModule,
+    ButtonModule,
+    GalleriaModule,
+    TranslateModule,
+  ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })

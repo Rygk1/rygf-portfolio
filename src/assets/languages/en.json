@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "about": {
+    "name": "Hi, I'm Rafael Gaitan",
+    "profession": "Front-end developer with 4+ years of experience in web and mobile applications",
+    "summary": "Bringing adaptability, active listening, and a commitment to high-quality, tailored code. Motivated by continuous improvement and team collaboration, delivering solutions that align with the company's goals and drive impactful results.",
+    "summaryTwo": "I follow development principles like SOLID, DRY, and KISS, which allow me to create scalable, maintainable, and high-quality solutions.",
+    "summaryThree": "I enjoy collaborating with teams and bringing innovative ideas to overcome challenges.",
+    "summaryFour": "My focus is on details, always aiming to deliver the best solutions tailored to the specific needs of each project.",
+    "summaryFive": "If you're looking for someone committed, detail-oriented, and ready to tackle new challenges, I'd love to work with you."
+  },
+  "labels": {
+    "description": "Description",
+    "learning": "Learning",
+    "tools": "Tools",
+    "stack": "Technologies",
+    "projects": "Projects"
+  },
+  "projects": {
+    "agrocollect": {
+      "title": "AgroCollect",
+      "description": "Corporate mobile app built with an offline-first approach to support field workers in rural areas. Allows data collection and management without internet. I implemented a CMS for streamlined data management, documented features and flows, and organized technical documentation for the entire development process."
+    },
+    "riskmann": {
+      "title": "RiskMann",
+      "description": "App for inspecting tools, equipment, and facilities using customizable templates. Users can schedule inspections, create action plans, and track and analyze results."
+    },
+    "iper": {
+      "title": "IPER",
+      "description": "Real-time risk matrix tracking system by activity. Supports risk identification, assessment, and control, and allows the creation of context-specific action plans."
+    },
+    "scow": {
+      "title": "SCOW",
+      "description": "Management system for security companies or entities that handle firearms. Manages clients, users, armories, and inventory of weapons and ammunition."
+    }
+  }
+}

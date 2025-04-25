@@ -1,17 +1,17 @@
 <section id="home" *ngIf="about" class="about-body">
   <div class="about-section">
-    <h1 class="title">{{ about.name }}</h1>
+    <h1 class="title">{{ "about.name" | translate }}</h1>
     <h2 class="subtitle">
-      {{ about.profession }}
+      {{ "about.profession" | translate }}
     </h2>
     <p class="about-text">
-      {{ about.summary }}
-      {{ about.summaryTwo }}
+      {{ "about.summary" | translate }}
+      {{ "about.summaryTwo" | translate }}
     </p>
     <p class="about-text">
-      {{ about.summaryThree }}
-      {{ about.summaryFour }}
-      {{ about.summaryFive }}
+      {{ "about.summaryThree" | translate }}
+      {{ "about.summaryFour" | translate }}
+      {{ "about.summaryFive" | translate }}
     </p>
     <!-- <p class="about-text">
     </p>

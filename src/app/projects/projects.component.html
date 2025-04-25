@@ -1,5 +1,5 @@
 <section id="projects" class="projects-container">
-  <h2 class="section-title">Projects</h2>
+  <h2 class="section-title">{{ "labels.projects" | translate }}</h2>
   <div class="p-grid">
     <div *ngFor="let project of projects" class="p-col-12 p-md-6">
       <div class="project-card-horizontal">
@@ -39,7 +39,12 @@
             ></i>
           </h3>
 
-          <p class="project-description">{{ project.description }}</p>
+          <p class="project-description">
+            {{
+              "projects." + project.title.toLowerCase() + ".description"
+                | translate
+            }}
+          </p>
 
           <div class="project-technologies">
             <p-chip

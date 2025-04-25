@@ -1,22 +1,43 @@
 {
-  "navbar": [
-    { "id": "home", "opt": "Inicio" },
-    { "id": "projects", "opt": "Proyectos" },
-    { "id": "technologies", "opt": "Tecnologías" },
-    { "id": "contact", "opt": "Contacto" }
-  ],
+  "navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "contact": "Contacto",
+    "cv": "CV"
+  },
   "about": {
-    "name": "Hola, soy Rafael Gaitán",
-    "contact": {
-      "phone": "+57 320 608 3876",
-      "email": "rafael.gaitan342@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/rafael-gaitan"
-    },
+    "name": "Hola, soy Rafael Gaitan",
     "profession": "Desarrollador front-end con más de 4 años de experiencia en aplicaciones web y móviles",
     "summary": "Aporto adaptabilidad, escucha activa y compromiso con un código de alta calidad y personalizado. Motivado por la mejora continua y la colaboración en equipo, entrego soluciones alineadas con los objetivos de la empresa y que generan resultados impactantes.",
     "summaryTwo": "Sigo principios de desarrollo como SOLID, DRY y KISS, que me permiten crear soluciones escalables, mantenibles y de alta calidad.",
     "summaryThree": "Disfruto colaborar con equipos y aportar ideas innovadoras para superar desafíos.",
     "summaryFour": "Mi enfoque está en los detalles, siempre apuntando a ofrecer las mejores soluciones adaptadas a las necesidades específicas de cada proyecto.",
     "summaryFive": "Si buscas a alguien comprometido, detallista y listo para asumir nuevos retos, me encantaría trabajar contigo."
+  },
+  "labels": {
+    "description": "Descripción",
+    "learning": "Aprendiendo",
+    "tools": "Herramientas",
+    "stack": "Tecnologías",
+    "projects": "Proyectos"
+  },
+  "projects": {
+    "agrocollect": {
+      "title": "AgroCollect",
+      "description": "Aplicación móvil corporativa con principio offline-first para apoyar a productores en campo. Permite recolectar y gestionar datos sin conexión. Implementé un CMS vinculado para facilitar la administración, documenté funcionalidades, flujos y pruebas, y estructuré toda la documentación técnica del proceso."
+    },
+    "riskmann": {
+      "title": "RiskMann",
+      "description": "Aplicación para inspeccionar herramientas, equipos e instalaciones mediante plantillas personalizables. Permite programar inspecciones, generar planes de acción, hacer seguimiento y visualizar estadísticas."
+    },
+    "iper": {
+      "title": "IPER",
+      "description": "Sistema para el seguimiento en tiempo real de matrices de riesgos por actividad. Facilita la identificación, evaluación y control de riesgos, así como la creación de planes de acción específicos por contexto."
+    },
+    "scow": {
+      "title": "SCOW",
+      "description": "Sistema de gestión para empresas de seguridad o entidades que usan armas. Administra clientes, usuarios, armerillos, inventarios de armas y municiones."
+    }
   }
 }
