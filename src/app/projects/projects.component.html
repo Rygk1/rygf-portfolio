@@ -15,6 +15,13 @@
         />
         <div class="project-card">
           <h3 class="project-title">
+            <i
+              class="project-type-icon"
+              [class]="
+                project.type === 'web' ? 'pi pi-desktop' : 'pi pi-mobile'
+              "
+              [title]="project.type"
+            ></i>
             <a
               *ngIf="project.link; else plainTitle"
               [href]="project.link"
@@ -30,13 +37,6 @@
                 {{ project.title }}
               </span>
             </ng-template>
-            <i
-              class="project-type-icon"
-              [class]="
-                project.type === 'web' ? 'pi pi-desktop' : 'pi pi-mobile'
-              "
-              [title]="project.type"
-            ></i>
           </h3>
 
           <p class="project-description">

@@ -95,7 +95,8 @@
     border-radius: 8px;
     height: 100%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    align-items: center; /* Centra verticalmente el contenido */
+    align-items: stretch; /* Centra verticalmente el contenido */
+
     .project-image {
       max-width: 250px;
       max-height: 300px;
@@ -122,19 +123,16 @@
     background-color: #1f2937; /* Fondo oscuro para las tarjetas */
     padding: 10px 25px;
     border-radius: 8px; /* Bordes redondeados */
-    height: 100%; /* Asegura que tarjetas en la misma fila tengan igual altura */
+
     display: flex;
     flex-direction: column; /* Organiza el contenido verticalmente */
-
+    justify-content: space-between; /* Espacio entre el título y la descripción */
     .project-title {
       font-size: 1.4rem; /* Tamaño del título de la tarjeta */
       color: #ffffff; /* Color blanco para el título */
       margin-top: 0;
-      margin-bottom: 15px;
+      margin: 15px 0px;
       font-weight: 500;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
 
       .project-link {
         color: #ffffff;
@@ -152,6 +150,7 @@
 
         .external-icon {
           font-size: 1rem;
+          padding-right: 5px;
         }
       }
       .project-type-icon {
@@ -166,6 +165,8 @@
       line-height: 1.6;
       margin-bottom: 20px;
       flex-grow: 1; /* Hace que la descripción ocupe el espacio disponible */
+      display: flex;
+      align-items: center;
     }
 
     .project-technologies {
@@ -177,6 +178,7 @@
       ::ng-deep .p-chip.tech-chip {
         background-color: #374151 !important; /* Fondo del chip (usa !important si es necesario sobreescribir estilos de PrimeNG) */
         color: #e5e7eb !important; /* Color del texto del chip */
+        transition: transform 0.3s ease;
         img {
           width: 20px; /* Ancho del icono dentro del chip */
           height: 20px; /* Alto del icono dentro del chip */
@@ -191,6 +193,9 @@
         .p-chip-remove-icon {
           display: none;
         }
+      }
+      ::ng-deep :hover.p-chip.tech-chip {
+        transform: translateY(-4px);
       }
     }
   }

@@ -12,7 +12,7 @@
     "summary": "Me motivan los desafíos y disfruto encontrar soluciones elegantes a problemas complejos",
     "summaryTwo": "Creo en el poder de un buen código: limpio, claro y con propósito",
     "summaryThree": "Trabajo en equipo, escucho, propongo y ajusto, porque cada proyecto merece algo único",
-    "summaryFour": "¿Manifiesto personal? Tal vez",
+    "summaryFour": "¿Manifiesto personal? Seguramente",
     "summaryFive": "¿Compromiso real con cada línea de código? Siempre."
   },
   "labels": {
@@ -25,7 +25,7 @@
   "projects": {
     "agrocollect": {
       "title": "AgroCollect",
-      "description": "Aplicación móvil offline-first utilizada por una ONG en Colombia para apoyar a productores agrícolas en terreno.\nLideré la implementación de un CMS personalizado, documenté funcionalidades, flujos y estructuré toda la documentación técnica.\nLa solución permitió recolectar datos sin conexión, mejorando la operación en campo y la toma de decisiones en varios proyectos agrícolas."
+      "description": "Aplicación móvil offline-first utilizada por una ONG en Colombia para apoyar a productores agrícolas en terreno.\nTrabajé en conjunto en la implementación de un CMS personalizado, documenté funcionalidades, flujos y estructuré toda la documentación técnica.\nLa solución permitió recolectar datos sin conexión, mejorando la operación en campo y la toma de decisiones en varios proyectos agrícolas."
     },
     "riskmann": {
       "title": "RiskMann",
