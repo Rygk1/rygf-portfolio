@@ -48,7 +48,6 @@ export class ProjectsComponent {
   ];
 
   showGallery(project: Project) {
-    console.log(project.images);
     this.projectTitle = project.title;
     this.displayedProjectImages = project.images;
     this.displayGallery = true;

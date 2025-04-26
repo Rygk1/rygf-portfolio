@@ -104,6 +104,12 @@
       object-fit: cover;
       aspect-ratio: 1 / 1;
     }
+    .project-mobile-image {
+      max-width: 250px;
+      max-height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
   }
   .p-grid {
     margin-left: -1rem; /* Compensa el padding de las columnas */
@@ -236,6 +242,7 @@
 
         .project-type-icon {
           font-size: 1.2rem;
+          padding-right: 5px;
         }
       }
 
@@ -259,4 +266,59 @@
       font-size: 2rem;
     }
   }
+}
+
+.project-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc-mockup {
+  width: 250px;
+  height: 180px;
+  background: #374151;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.mobile-space {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+
+.pc-screen {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mobile-mockup {
+  width: 150px;
+  height: 300px;
+  background: #374151;
+  border-radius: 15px;
+  padding: 10px 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.mobile-screen {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* La imagen sigue usando tu estilo original */
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }

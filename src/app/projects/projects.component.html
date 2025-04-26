@@ -3,16 +3,43 @@
   <div class="p-grid">
     <div *ngFor="let project of projects" class="p-col-12 p-md-6">
       <div class="project-card-horizontal">
-        <img
-          (click)="showGallery(project)"
-          class="project-image"
-          [src]="
-            'assets/images/' +
-            project.title.toLowerCase() +
-            '/' +
-            project.mainImage
-          "
-        />
+        <div class="project-image-wrapper" (click)="showGallery(project)">
+          <ng-container *ngIf="project.type === 'web'; else mobileMockup">
+            <!-- PC Mockup -->
+
+            <div class="pc-mockup">
+              <div class="pc-screen">
+                <img
+                  [src]="
+                    'assets/images/' +
+                    project.title.toLowerCase() +
+                    '/' +
+                    project.mainImage
+                  "
+                  class="project-image"
+                />
+              </div>
+            </div>
+          </ng-container>
+          <ng-template #mobileMockup>
+            <!-- Mobile Mockup -->
+            <div class="mobile-space">
+              <div class="mobile-mockup">
+                <div class="mobile-screen">
+                  <img
+                    [src]="
+                      'assets/images/' +
+                      project.title.toLowerCase() +
+                      '/' +
+                      project.mainImage
+                    "
+                    class="project-mobile-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
         <div class="project-card">
           <h3 class="project-title">
             <i
