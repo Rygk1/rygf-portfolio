@@ -11,6 +11,14 @@ body {
   height: 100%;
   // overflow-x: hidden; // para evitar scroll horizontal innecesario
 }
+:root {
+  --text: #dee5ed;
+  --background: #1f2937;
+  --primary: #abbccf;
+  --secondary: #543f6e;
+  --accent: #8e5da2;
+  --card-backgound: #dee5ed0d;
+}
 
 /* ===== En src/styles.scss ===== */
 
