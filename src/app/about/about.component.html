@@ -1,7 +1,14 @@
 <section id="home" *ngIf="about" class="about-body">
   <div class="stars"></div>
   <div class="about-section">
-    <h1 class="title">{{ "about.name" | translate }}</h1>
+    <div class="about-image">
+      <h1 class="title">
+        {{ "about.name" | translate }}
+      </h1>
+      <p class="about-text">
+        <img src="assets/profile/profile.webp" height="300px" alt="" />
+      </p>
+    </div>
     <h2 class="subtitle">
       {{ "about.profession" | translate }}
     </h2>
@@ -19,6 +26,5 @@
     </p>
 
     {{ "about.summaryFive" | translate }}
-    <!-- <p class="about-text"></p> -->
   </div>
 </section>

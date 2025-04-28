@@ -81,6 +81,10 @@ export class NavbarComponent implements OnInit {
     this.translationService.use(lang);
   }
 
+  moveToSection() {
+    document.querySelector('#home')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   donwloadCV(type: string) {
     const link = document.createElement('a');
     link.href = `assets/cv/cv-${type}.pdf`; // Path to your CV file

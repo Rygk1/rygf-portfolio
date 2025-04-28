@@ -1,8 +1,8 @@
 .about-body {
   background-color: #243757;
   width: 100%;
-  min-height: 94dvh;
-  background: linear-gradient(to bottom, #243757, #243757 70%, #111827);
+  // min-height: 94dvh;
+  // background: linear-gradient(to bottom, #c2b79b, #243757 70%, #243757);
   display: flex;
   flex-wrap: wrap;
   align-content: baseline; /* o space-between, etc */
@@ -10,17 +10,25 @@
 
 .about-section {
   padding: 2rem 2rem;
-  // background-color: #111827;
   color: var(--text);
   max-width: 1100px;
   margin: 0 auto;
   animation: fadeInUp 2s ease forwards;
   opacity: 0;
   transform: translateY(20px);
-  // position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .about-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    img {
+      mask-image: linear-gradient(#243757 80%, transparent);
+    }
+  }
 }
 
 @keyframes fadeInUp {

@@ -6,7 +6,12 @@
   class="custom-menubar"
 >
   <ng-template pTemplate="start">
-    <img src="assets/logos/logo3.svg" alt="logo" class="logo" />
+    <img
+      src="assets/logos/logo3.svg"
+      alt="logo"
+      class="logo"
+      (click)="moveToSection()"
+    />
   </ng-template>
   <ng-template pTemplate="item" let-item>
     <a (click)="item.command()" class="p-menuitem-link">

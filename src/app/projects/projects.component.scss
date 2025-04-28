@@ -140,6 +140,8 @@
       margin-top: 0;
       margin: 15px 0px;
       font-weight: 500;
+      display: flex;
+      justify-content: space-between;
 
       .project-link {
         color: #ffffff;
@@ -206,7 +208,7 @@
       }
       ::ng-deep :hover.p-chip.tech-chip {
         transform: translateY(-4px);
-        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        // box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
       }
     }
   }

@@ -42,28 +42,32 @@
         </div>
         <div class="project-card">
           <h3 class="project-title">
-            <i
-              class="project-type-icon"
-              [class]="
-                project.type === 'web' ? 'pi pi-desktop' : 'pi pi-mobile'
-              "
-              [title]="project.type"
-            ></i>
             <a
-              *ngIf="project.link; else plainTitle"
               [href]="project.link"
               target="_blank"
               rel="noopener noreferrer"
               class="project-link with-hover"
             >
               {{ project.title }}
-              <i class="pi pi-external-link external-icon"></i>
+              <i
+                class="project-type-icon"
+                [class]="
+                  project.type === 'web' ? 'pi pi-desktop' : 'pi pi-mobile'
+                "
+                [title]="project.type"
+              >
+              </i>
             </a>
-            <ng-template #plainTitle>
-              <span class="project-link">
-                {{ project.title }}
-              </span>
-            </ng-template>
+
+            <span *ngIf="project.link" class="project-link">
+              <a
+                class="project-technologies"
+                [href]="project.link"
+                target="_blank"
+              >
+                <p-chip label="Demo" styleClass="tech-chip"></p-chip>
+              </a>
+            </span>
           </h3>
 
           <p class="project-description">
