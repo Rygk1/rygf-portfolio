@@ -2,9 +2,7 @@
   <div class="stars"></div>
   <div class="about-section">
     <div class="about-image">
-      <h1 class="title">
-        {{ "about.name" | translate }}
-      </h1>
+      <h1 class="title" [innerHTML]="'about.name' | translate"></h1>
       <p class="about-text">
         <img src="assets/profile/profile.webp" height="300px" alt="" />
       </p>
