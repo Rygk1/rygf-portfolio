@@ -22,7 +22,8 @@
     "learning": "Learning",
     "tools": "Tools",
     "stack": "Technologies",
-    "projects": "Projects"
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "projects": {
     "agrocollect": {
@@ -41,5 +42,14 @@
       "title": "SCOW",
       "description": "Security company management platform for handling clients, users, weapons, and ammunition inventory.\n I developed modules for inventory tracking, client management, and internal controls.\nThe platform streamlined logistics and compliance for companies handling regulated equipment."
     }
+  },
+  "contact": {
+    "descriptionOne": "Hi! I'm Rafael Gaitán. I come from Yopal, a small town in Colombia where I grew up, completed school, and earned my degree as a Systems Engineer.",
+    "descriptionTwo": "I've always been fascinated by how differently people perceive problems, and I think that's where my passion was born: finding unique solutions for unique challenges. To me, programming isn't just about writing code it's about understanding, adapting, and constantly learning.",
+    "descriptionThree": "Outside of the screen, I love cooking (it's my favorite way to disconnect), working out at the gym, and occasionally playing rugby.",
+    "descriptionFour": "I like to believe that, both in sports and in life, staying active and always learning is the key to continuous growth.",
+    "descriptionFive": "I believe that staying active and constantly learning applies just as much inside the code as it does outside of it.",
+    "by": "© Handcrafted by Rafael Gaitan",
+    "made": "Made with"
   }
 }

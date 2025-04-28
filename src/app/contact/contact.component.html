@@ -1,1 +1,52 @@
-<p>contact works!</p>
+<section id="contact">
+  <div class="contact-section">
+    <h2 class="section-title">{{ "labels.contact" | translate }}</h2>
+
+    <div class="information-content">
+      <div class="profile-picture">
+        <img src="assets/profile/profile-real.webp" alt="Mi foto" />
+      </div>
+      <div class="contact-description">
+        <p>
+          {{ "contact.descriptionOne" | translate }}
+        </p>
+        <p>
+          {{ "contact.descriptionTwo" | translate }}
+        </p>
+        <p>
+          {{ "contact.descriptionThree" | translate }}
+        </p>
+        <p>
+          {{ "contact.descriptionFour" | translate }}
+        </p>
+        <p>
+          {{ "contact.descriptionFive" | translate }}
+        </p>
+      </div>
+      <div class="social-media">
+        <a href="https://github.com/Rygk1" target="_blank" class="nav-icon">
+          <i class="pi pi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/rafael-gaitan"
+          target="_blank"
+          class="nav-icon"
+        >
+          <i class="pi pi-linkedin"></i>
+        </a>
+      </div>
+      <div class="made-by">
+        {{ "contact.by" | translate }}
+
+        <div class="made-with">
+          {{ "contact.made" | translate }}
+          <img src="assets/icons/heart.svg" height="60px" /> &
+
+          <a href="https://angular.dev/" target="_blank" class="nav-icon">
+            <img src="assets/icons/angular.svg" height="40px" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

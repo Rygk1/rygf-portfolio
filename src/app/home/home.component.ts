@@ -1,7 +1,7 @@
 import { Component, computed, signal } from '@angular/core';
 import { AboutComponent } from '../about/about.component';
 import { ProjectsComponent } from '../projects/projects.component';
-// import { ContactComponent } from '../contact/contact.component';
+import { ContactComponent } from '../contact/contact.component';
 import info from './../mock/mock.json';
 import { CommonModule } from '@angular/common';
 import { TabMenuModule } from 'primeng/tabmenu';
@@ -16,7 +16,7 @@ import { MenubarModule } from 'primeng/menubar';
     AboutComponent,
     ProjectsComponent,
     TechnologiesComponent,
-    // ContactComponent,
+    ContactComponent,
     CommonModule,
     TabMenuModule,
     MenubarModule,

@@ -22,7 +22,8 @@
     "learning": "Aprendiendo",
     "tools": "Herramientas",
     "stack": "Tecnologías",
-    "projects": "Proyectos"
+    "projects": "Proyectos",
+    "contact": "Contacto"
   },
   "projects": {
     "agrocollect": {
@@ -41,5 +42,14 @@
       "title": "SCOW",
       "description": "Sistema de gestión para empresas de seguridad que manejan armas y municiones.\nImplementé módulos para controlar inventarios, gestionar clientes y usuarios, y asegurar trazabilidad en procesos internos.\nEl sistema agilizó la logística y el cumplimiento normativo en compañías que operan con equipos regulados."
     }
+  },
+  "contact": {
+    "descriptionOne": "¡Hola! Soy Rafael Gaitán. Vengo de Yopal, un pequeño pueblo en Colombia donde crecí, estudié todo el colegio y también me gradué como Ingeniero de Sistemas.",
+    "descriptionTwo": "Siempre me llamó la atención cómo cada persona veía los problemas de una manera diferente, y creo que de ahí nació mi pasión: encontrar soluciones únicas para problemas únicos. Para mí, programar no es solo escribir código, es entender, adaptarse y aprender todo el tiempo.",
+    "descriptionThree": "Fuera de la pantalla, me encanta cocinar (es mi forma favorita de desconectarme), entrenar en el gimnasio y de vez en cuando jugar rugby.",
+    "descriptionFour": "Me gusta pensar que tanto en el deporte como en la vida, mantenerse en movimiento y aprendiendo es la clave para seguir creciendo.",
+    "descriptionFive": "Creo que mantenerse activo y aprender constantemente son dos cosas que aplican tanto dentro como fuera del código.",
+    "by": "© Hecho a mano por Rafael Gaitan",
+    "made": "Hecho con"
   }
 }

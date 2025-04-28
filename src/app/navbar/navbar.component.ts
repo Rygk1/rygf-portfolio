@@ -57,6 +57,14 @@ export class NavbarComponent implements OnInit {
             ?.scrollIntoView({ behavior: 'smooth' }),
       },
       {
+        label: 'contact',
+        icon: 'pi pi-user',
+        command: () =>
+          document
+            .querySelector('#contact')
+            ?.scrollIntoView({ behavior: 'smooth' }),
+      },
+      {
         label: 'cv',
         icon: 'pi pi-download',
         items: [
