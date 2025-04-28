@@ -4,10 +4,10 @@
       font-family: 'Courier New', monospace;
       font-size: 22px;
       font-weight: bold;
-      fill: #ffffff;
+      fill: #c2b79b;
     }
     .name {
-      fill: #6366f1;
+      fill: #dee5ed;
     }
     .cursor {
       animation: blink 1s steps(1) infinite;

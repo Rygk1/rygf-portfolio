@@ -4,7 +4,9 @@
     "projects": "Projects",
     "technologies": "Technologies",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "CV",
+    "en": "En",
+    "es": "Es"
   },
   "about": {
     "name": "Hi, I'm Rafael Gaitan",

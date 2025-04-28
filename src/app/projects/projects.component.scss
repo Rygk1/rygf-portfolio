@@ -70,7 +70,7 @@
 
 :host {
   display: block;
-  background-color: #111827; /* Fondo oscuro principal (ajusta si es necesario) */
+  background-color: #243757; /* Fondo oscuro principal (ajusta si es necesario) */
   padding: 50px 20px; /* Espaciado alrededor de la sección */
   color: #f3f4f6; /* Color de texto principal claro */
 }
@@ -90,7 +90,7 @@
     display: flex;
     // flex-direction: row;
     gap: 20px;
-    background-color: #1f2937;
+    background-color: #3b5660;
     padding: 20px;
     border-radius: 8px;
     height: 100%;
@@ -126,13 +126,14 @@
   }
 
   .project-card {
-    background-color: #1f2937; /* Fondo oscuro para las tarjetas */
+    // background-color: #3a5f6f; /* Fondo oscuro para las tarjetas */
     padding: 10px 25px;
     border-radius: 8px; /* Bordes redondeados */
 
     display: flex;
     flex-direction: column; /* Organiza el contenido verticalmente */
     justify-content: space-between; /* Espacio entre el título y la descripción */
+
     .project-title {
       font-size: 1.4rem; /* Tamaño del título de la tarjeta */
       color: #ffffff; /* Color blanco para el título */
@@ -148,26 +149,28 @@
         i {
           margin-left: 8px;
           font-size: 1.2rem;
+          color: #fff;
         }
 
         &.with-hover:hover {
-          color: #6366f1;
+          color: #243757;
         }
 
         .external-icon {
           font-size: 1rem;
           padding-right: 5px;
+          color: #fff;
         }
       }
       .project-type-icon {
         font-size: 1.5rem;
-        color: #9ca3af;
+        color: #fff;
       }
     }
 
     .project-description {
       font-size: 0.95rem; /* Tamaño del texto de descripción */
-      color: #d1d5db; /* Color gris claro para la descripción */
+      color: #dad5b7; /* Color gris claro para la descripción */
       line-height: 1.6;
       margin-bottom: 20px;
       flex-grow: 1; /* Hace que la descripción ocupe el espacio disponible */
@@ -182,9 +185,10 @@
       margin-top: auto; /* Empuja los chips hacia abajo si hay espacio */
       /* Estilos específicos para los p-chip usando la clase asignada */
       ::ng-deep .p-chip.tech-chip {
-        background-color: #374151 !important; /* Fondo del chip (usa !important si es necesario sobreescribir estilos de PrimeNG) */
-        color: #e5e7eb !important; /* Color del texto del chip */
+        background-color: #c2b79b !important; /* Fondo del chip (usa !important si es necesario sobreescribir estilos de PrimeNG) */
+        color: #243757 !important; /* Color del texto del chip */
         transition: transform 0.3s ease;
+        font-weight: 500;
         img {
           width: 20px; /* Ancho del icono dentro del chip */
           height: 20px; /* Alto del icono dentro del chip */
@@ -202,6 +206,7 @@
       }
       ::ng-deep :hover.p-chip.tech-chip {
         transform: translateY(-4px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
       }
     }
   }
@@ -272,6 +277,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
 
 .pc-mockup {

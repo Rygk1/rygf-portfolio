@@ -59,7 +59,18 @@ export class NavbarComponent implements OnInit {
       {
         label: 'cv',
         icon: 'pi pi-download',
-        command: () => this.donwloadCV(),
+        items: [
+          {
+            label: 'en',
+            icon: 'pi pi-file',
+            command: () => this.donwloadCV('en'),
+          },
+          {
+            label: 'es',
+            icon: 'pi pi-file',
+            command: () => this.donwloadCV('es'),
+          },
+        ],
       },
     ];
   }
@@ -70,9 +81,9 @@ export class NavbarComponent implements OnInit {
     this.translationService.use(lang);
   }
 
-  donwloadCV() {
+  donwloadCV(type: string) {
     const link = document.createElement('a');
-    link.href = 'assets/cv/cv.pdf'; // Path to your CV file
+    link.href = `assets/cv/cv-${type}.pdf`; // Path to your CV file
     link.download = 'CV.pdf'; // Name of the downloaded file
     link.click();
   }

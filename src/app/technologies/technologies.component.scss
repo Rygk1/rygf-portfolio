@@ -1,6 +1,6 @@
 #technologies {
   display: block;
-  background-color: #111827; /* Fondo oscuro principal (ajusta si es necesario) */
+  background-color: #243757; /* Fondo oscuro principal (ajusta si es necesario) */
   padding: 50px 20px; /* Espaciado alrededor de la sección */
   color: #f3f4f6; /* Color de texto principal claro */
   position: relative; /* Para el posicionamiento absoluto de los hijos */
@@ -25,9 +25,10 @@
     gap: 1rem;
     justify-items: center;
     margin-bottom: 2rem;
+    color: #c2b79b;
 
     .tech-card {
-      background-color: #374151;
+      background-color: #3b5660;
       border-radius: 12px;
       padding: 1rem;
       width: 100px;
