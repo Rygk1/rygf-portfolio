@@ -7,7 +7,7 @@
           <ng-container *ngIf="project.type === 'web'; else mobileMockup">
             <!-- PC Mockup -->
 
-            <div class="pc-mockup" appTilt>
+            <div class="pc-mockup">
               <div class="pc-screen">
                 <img
                   [src]="
@@ -23,7 +23,7 @@
           </ng-container>
           <ng-template #mobileMockup>
             <!-- Mobile Mockup -->
-            <div class="mobile-space" appTilt>
+            <div class="mobile-space">
               <div class="mobile-mockup">
                 <div class="mobile-screen">
                   <img

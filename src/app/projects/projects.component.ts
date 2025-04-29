@@ -6,7 +6,7 @@ import { ChipModule } from 'primeng/chip';
 import { ButtonModule } from 'primeng/button';
 import { GalleriaModule } from 'primeng/galleria';
 import { TranslateModule } from '@ngx-translate/core';
-import { TiltDirective } from '../directives/tilt.directive';
+// import { TiltDirective } from '../directives/tilt.directive';
 
 @Component({
   selector: 'app-projects',
@@ -18,7 +18,7 @@ import { TiltDirective } from '../directives/tilt.directive';
     ButtonModule,
     GalleriaModule,
     TranslateModule,
-    TiltDirective,
+    // TiltDirective,
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',

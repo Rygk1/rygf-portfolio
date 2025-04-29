@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     padding: 2rem;
 
     img {
@@ -291,7 +291,9 @@
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  position: relative;
+  // position: relative;
+  transition: transform 0.3s ease;
+  will-change: transform; /* mejora rendimiento */
 }
 .mobile-space {
   display: flex;
@@ -315,6 +317,15 @@
   padding: 10px 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   position: relative;
+  transition: transform 0.3s ease;
+  will-change: transform; /* mejora rendimiento */
+}
+
+.pc-mockup:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+.mobile-mockup:hover {
+  transform: scale(1.05) rotate(-2deg);
 }
 
 .mobile-screen {
